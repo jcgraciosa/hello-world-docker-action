@@ -33,4 +33,4 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
-          tags: jcgraciosa-hello-world
+          tags: jcgraciosa/hello-world1234
