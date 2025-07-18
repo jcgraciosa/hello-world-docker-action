@@ -34,5 +34,3 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           tags: test
-
-# added comment
