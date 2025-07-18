@@ -34,3 +34,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           tags: jcgraciosa/hello-world1234
+          push: true
