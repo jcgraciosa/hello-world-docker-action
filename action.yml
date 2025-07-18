@@ -13,7 +13,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    -${{ inputs.who-to-greet }}
+    - ${{ inputs.who-to-greet }}
 
 # to pass inputs to the Docker container, these should be declared as input using inputs and pass the input in the args keyword. 
 # everything you include in args is passed to the container
