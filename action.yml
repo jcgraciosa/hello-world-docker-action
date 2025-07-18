@@ -1,0 +1,19 @@
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet: # id of input
+  description: 'Who to greet'
+  required: true
+  default: 'World'
+outputs:
+  time: # id of output
+  description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    -${{ inputs.who-to-greet }}
+
+# to pass inputs to the Docker container, these should be declared as input using inputs and pass the input in the args keyword. 
+# everything you include in args is passed to the container
